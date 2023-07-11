@@ -1,0 +1,253 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    top: 100px;
+    overflow-x: hidden;
+    animation: fadeOut 30s;
+  }
+
+  @font-face {
+    font-family: 'Chalkduster';
+    src: url('../../fonts/Chalkduster.ttf') format('truetype');
+}
+
+
+  
+  .container {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin-top: 100px;
+  }
+  
+  .bowl,
+  .left-arm,
+  .right-arm,
+  .lower-arm {
+    position: absolute;
+    top: 40%;
+    left: 0%;
+    transform: translate(-50%, -50%);
+
+  }
+  
+  .bowl {
+    width: 400px;
+    height: auto;
+    animation: bowl-animation 15s infinite ease-in-out;
+  }
+  
+
+  .left-arm {
+    width: 67.5%;
+    animation: left-arm-animation 1s ease-in-out forwards;
+  }
+  
+  .right-arm {
+    width: 67.5%;
+    animation: right-arm-animation 1s ease-in-out forwards;
+  }
+  
+  .lower-arm {
+    width: 350px;
+    height: auto;
+  }
+  
+  .left-arm {
+    top: 25%;
+    left: 20%;
+  }
+  
+  .right-arm {
+    top: 20%;
+    left: 94%;
+  }
+  
+  
+  .lower-arm-1 {
+    top: 70%;
+    left: 17%;
+    animation: lower-arm-1-animation 1s ease-in-out forwards;
+
+  }
+  
+  .lower-arm-2 {
+    top: 68%;
+    left: 100%;
+    animation: lower-arm-2-animation 1s ease-in-out forwards;
+
+  }
+
+
+  .text {
+    text-decoration: none;
+    font-family: 'Chalkduster', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    position: absolute;
+    text-align: center;
+    font-size: 60px;
+    color: #e35e3a;
+    animation: text-animation 1s ease-in-out, text-move 15s infinite ease-in-out;
+    top: 0px;
+}
+
+.redirect-button {
+    position: absolute;
+    top: 20vw;
+    background-color: #e35e3a; 
+    color: rgb(8, 8, 8);
+    padding: 10px 20px;
+    border-radius: 5px;
+    opacity: 0;
+    animation: fade-in 1s 3s forwards;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Chalkduster', sans-serif;
+
+  }
+
+  
+  @keyframes left-arm-animation {
+    0% {
+      opacity: 0;
+      transform: translate(-150%, -150%);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(-50%, -50%);
+    }
+  }
+  
+  @keyframes right-arm-animation {
+    0% {
+      opacity: 0;
+      transform: translate(50%, -150%);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(-50%, -50%);
+    }
+  }
+  
+  @keyframes lower-arm-1-animation {
+    0% {
+      opacity: 0;
+      transform: translate(-150%, 50%);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(-50%, -50%);
+    }
+  }
+  
+  @keyframes lower-arm-2-animation {
+    0% {
+      opacity: 0;
+      transform: translate(50%, 50%);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  @keyframes text-animation {
+    0% {
+      opacity: 0;
+      transform: translate(-50%, 100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(-50%, 0%);
+    }
+  }
+
+  @keyframes bowl-animation {
+    0% {
+      transform: translateX(-20px);
+    }
+    50% {
+      transform: translateX(20px);
+    }
+    100% {
+      transform: translateX(-20px);
+    }
+  }
+
+  @keyframes text-move {
+    0% {
+      transform: translateX(20px);
+    }
+    50% {
+      transform: translateX(-20px);
+    }
+    100% {
+      transform: translateX(20px);
+    }
+  }
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @media (max-width: 400px) {
+    body {
+      overflow-x: auto;
+      margin-top: -180px;
+    }
+  
+    .container {
+      width: 90vw;
+      max-width: none;
+      height: 90vw;
+      max-height: none;
+    }
+  
+    .bowl {
+      width: 90vw;
+    }
+  
+    .lower-arm {
+      width: 60vw;
+    }
+  
+    .left-arm {
+      width: 60vw;
+      animation: left-arm-animation 1s ease-in-out forwards;
+    }
+  
+    .right-arm {
+      width: 60vw;
+      animation: right-arm-animation 1s ease-in-out forwards;
+    }
+  
+    .text {
+      font-size: 8vw;
+      margin-top: 0px;
+    }
+  
+    .redirect-button {
+      bottom: 10px;
+      right: 10px;
+      font-size: 2vw;
+    }
+  }
