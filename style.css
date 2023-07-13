@@ -40,7 +40,7 @@ a:hover {
 .overview__image img {
     height: 100%;
     width: auto;
-    max-height: 35vh;
+    max-height: 28vh;
     margin-bottom: 0px;
 }
 
@@ -484,6 +484,8 @@ a:hover {
     }
     .menu nav ul li {
         display: list-item;
+        background-color: #d58b2b;
+        border-radius: 5px;
     }
 
     .divisor__menu{
@@ -509,6 +511,11 @@ a:hover {
     .menu, .feature, .content {
         max-width: 500px;
     }
+
+    .background{
+        margin-top: -201px;
+        margin-left: -10px;
+    }
     .overview {
         height: 100vh;
     }
@@ -516,9 +523,7 @@ a:hover {
         top: 0px;
         right: 20px;
     }
-    .overview__image img {
-        margin-bottom: 70px;
-    }
+  
 
     .feature {
         margin: 0 auto 150px auto;
@@ -546,8 +551,12 @@ a:hover {
     .menu, .feature, .content {
         max-width: 320px;
     }
+
+    .content h1{
+        background-color: #a1632d;
+    }
     .overview {
-        height: 90vh;
+        height: 35vh;
     }
     .overview__social {
         right: 15px;
