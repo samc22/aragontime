@@ -142,7 +142,7 @@ a:hover {
 }
 
 .hamburguer:before, 
-.hamburguer::after{
+.hamburguer:after{
     content: "";
     position: absolute;
     height: 4px;
@@ -157,7 +157,7 @@ a:hover {
     width: 20px;
 }
 
-.hamburguer::after{
+.hamburguer:after{
     top: 10px;
     width: 25px;
 }
@@ -165,7 +165,7 @@ a:hover {
 .toggle-menu{
     position: absolute;
     width: 30px;
-    height: 100%;
+    height: auto;
     z-index: 3;
     cursor: pointer;
     opacity: 0;
@@ -194,6 +194,7 @@ a:hover {
 .menu nav ul li:hover > ul {
     display: block;
 }
+
 
 .menu nav ul ul {
     display: none;
@@ -225,6 +226,9 @@ a:hover {
     
     border-radius: 10px;
   }
+
+
+
 .divisor__menu{
     color: #9c3c27;
 }
@@ -486,6 +490,10 @@ a:hover {
         display: list-item;
         background-color: #d58b2b;
         border-radius: 5px;
+    }
+
+    .menu nav ul > a:active {
+        display: none;
     }
 
     .divisor__menu{
