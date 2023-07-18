@@ -40,7 +40,7 @@ a:hover {
 .overview__image img {
     height: 100%;
     width: auto;
-    max-height: 28vh;
+    max-height: 35vh;
     margin-bottom: 0px;
 }
 
@@ -332,16 +332,16 @@ a:hover {
 }
 
 .flexContainer div {
-    width: 400px;
+    width: 100%;
     height: auto;
-    margin: 30px;
+    margin: 35px;
     text-align: left;
     font-family: 'Chalkduster', sans-serif;
    
 }
 
 .flexContainer div .texto_somos{
-    width: 397px;
+    width: 100%;
     height: auto;
     margin: 0px;
     text-align: left;
@@ -385,7 +385,7 @@ a:hover {
     font-size: 18px;
 }
 .imagem_somos img{
-    width: 450px;
+    width: 100%;
     height: auto;
     border-radius: 550px;
 }
@@ -486,15 +486,14 @@ a:hover {
     .hamburguer, .toggle-menu{
         display: block;
     }
+
+
     .menu nav ul li {
         display: list-item;
         background-color: #d58b2b;
         border-radius: 5px;
     }
 
-    .menu nav ul > a:active {
-        display: none;
-    }
 
     .divisor__menu{
         display: none;
@@ -513,6 +512,10 @@ a:hover {
     }
     .content .content__button--wrapper img {
         max-height: 90px;
+    }
+    .flexContainer{
+        flex-wrap: wrap;
+        width: 100%;
     }
 }
 @media(max-width: 768px) {
