@@ -30,11 +30,10 @@
     <div class="image-div">
         <img src="images/linha.png" alt="Descrição da imagem">
     </div>
-    <header class="menu">
+    <header class="menu" >
         <nav>
-            <input type="checkbox" class="toggle-menu">
-            <div class="hamburguer"></div>
             <ul>
+              
                 <li><a href="#festival" title="Festival">Festival</a></li>
                 <span class="divisor__menu">|</span>
                 <li><a href="#aragontime" title="Somos Ara Agontimé">Ara Agontimé</a></li>
@@ -52,14 +51,16 @@
                 <span class="divisor__menu">|</span>
                 <li><a href="#programacao" title="Programação">Programação</a></li>
                 <span class="divisor__menu">|</span>
-                <li><a href="#" title="Equipe">Equipe</a></li>
+                <li><a href="#equipe" title="Equipe">Equipe</a></li>
                 <span class="divisor__menu">|</span>
                 <li><a href="#contato" title="Contato">Contato</a></li>
+          
             </ul>
         </nav>
     </header>
     
-  
+    <button onclick="topFunction()" id="myBtn" title="Ir ao topo">^</button>
+   
     <div class="background">
         <section class="section content" id="festival">
             <h2 class="content__title content__festival">
@@ -96,6 +97,7 @@
                     
             
         </section>
+        
         <section class="section content" id="aragontime">
             <h2 class="content__title content__aragontime">
                 <span>Ara Agontimé</span>
@@ -137,6 +139,7 @@
                 <!--<img src="images/titulo-chamamento.png" alt="">-->
             </h2>
             <h1>Chamamento</h1>
+            <div class="flexContainer">
             <div class="content__text">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quidem quo quos ratione maxime, unde
                     accusantium amet fuga debitis officia. Dolores suscipit dolore consequuntur laboriosam et!
@@ -156,6 +159,7 @@
                 </p>
                     
             </div>
+            </div>
         </section>
         <section class="section content" id="programacao">
             <h2 class="content__title content__programacao">
@@ -163,12 +167,13 @@
                 <!--<img src="images/titulo-inscrição.png" alt="">-->
             </h2>
             <h1>Programação</h1>
+            <div class="flexContainer">
             <div class="content__text">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima dicta necessitatibus natus ducimus
                     dolorum aliquid, quod explicabo quibusdam et optio veritatis praesentium sapiente adipisci modi,
                     alias quae nostrum dolor consectetur.</p>
             </div>
-            <p></p>
+           </div>
             <!--
             <div class="flexContainer">
                     <div class="data_programacao">04/07</div>
@@ -188,18 +193,45 @@
         -->
          
         </section>
+
+        <section class="section content" id="equipe">
+            <h2 class="content__title content__Equipe">
+                <span>Equipe</span>
+                <!--<img src="images/titulo-Equipe.png" alt="">-->
+            </h2>
+            <h1>Equipe</h1>
+            <div class="flexContainer">
+            <div class="content__text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quidem quo quos ratione maxime, unde
+                    accusantium amet fuga debitis officia. Dolores suscipit dolore consequuntur laboriosam et!
+                    Repudiandae quibusdam qui quasi.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quidem quo quos ratione maxime, unde
+                    accusantium amet fuga debitis officia. Dolores suscipit dolore consequuntur laboriosam et!
+                    Repudiandae quibusdam qui quasi.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quidem quo quos ratione maxime, unde
+                    accusantium amet fuga debitis officia. Dolores suscipit dolore consequuntur laboriosam et!
+                    Repudiandae quibusdam qui quasi.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quidem quo quos ratione maxime, unde
+                    accusantium amet fuga debitis officia. Dolores suscipit dolore consequuntur laboriosam et!
+                    Repudiandae quibusdam qui quasi. </p>
+                    
+            </div>
+            </div>
+        </section>
         <section class="section content" id="contato">
             <h2 class="content__title content__contato">
                 <span>Contato</span>
                 <!--<img src="images/titulo-contato.png" alt="">-->
             </h2>
             <h1>Contato</h1>
+            <div class="flexContainer">
             <div class="content__text">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quidem quo quos ratione maxime, unde
                     accusantium amet fuga debitis officia. Dolores suscipit dolore consequuntur laboriosam et!
                     Repudiandae quibusdam qui quasi.</p>
                 <p>E-mail: <a href="mailto:email@email.com.br">email@email.com.br</a></p>
                 <p>Instagram: <a href="">@instagram</a></p>
+            </div>
             </div>
         </section>
     </div>
@@ -226,6 +258,10 @@
             </div>
         </div>
     </footer>
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/scroll.js"></script>
+    
 </body>
 
 </html>
