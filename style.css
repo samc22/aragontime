@@ -30,7 +30,7 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    animation: zoom-in-zoom-out 9s ease infinite;
+    animation: zoom-in-zoom-out 9s ease;
 }
 
 .overview__image2 {
