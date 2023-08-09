@@ -574,7 +574,7 @@ a:hover {
     }
 }
 
-@media(max-width: 390px) {
+@media(min-width: 390px) and (max-width: 393px) {
 
     .content:first-child{
         padding-top: 25vh;
