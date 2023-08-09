@@ -23,13 +23,14 @@ a:hover {
     align-items: center;
     justify-content: center;
     height: 60vh;
-   background-color: #d58b2b;
-   flex:1;
+    background-color: #d58b2b;
+    flex:1;
 }
 .overview__image {
     display: flex;
     align-items: center;
     justify-content: center;
+    animation: zoom-in-zoom-out 1s ease infinite;
 }
 
 .overview__image2 {
@@ -604,3 +605,17 @@ a:hover {
     }
     
 }
+
+/*ANIMAÇÕES*/
+
+@keyframes zoom-in-zoom-out {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1.5, 1.5);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
