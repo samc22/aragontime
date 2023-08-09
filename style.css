@@ -591,5 +591,8 @@ a:hover {
     .content{
         padding: 110px 0;
     }
+    .content:first-child{
+        padding-top: 25vh;
+    }
     
 }
