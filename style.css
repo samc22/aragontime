@@ -587,5 +587,9 @@ a:hover {
     .content h1{
         font-size: 30px;
     }
+
+    .content{
+        padding: 110px 0;
+    }
     
 }
